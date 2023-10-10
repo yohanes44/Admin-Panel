@@ -128,6 +128,7 @@ export const rows = [
 export const inputElements = [
   {
     id: 1,
+    name: "firstName",
     label: "First Name",
     type: "text",
     placeholder: "first name",
@@ -138,6 +139,7 @@ export const inputElements = [
   },
   {
     id: 2,
+    name: "lastName",
     label: "Last Name",
     type: "text",
     placeholder: "last name",
@@ -147,6 +149,7 @@ export const inputElements = [
   },
   {
     age: 3,
+    name: "age",
     label: "Age",
     type: "number",
     placeholder: "age",
@@ -156,6 +159,7 @@ export const inputElements = [
   },
   {
     id: 4,
+    name: "email",
     label: "Email",
     type: "email",
     placeholder: "test@g,ail.com",
@@ -165,6 +169,7 @@ export const inputElements = [
   },
   {
     id: 5,
+    name: "maritalStatus",
     label: "Marita status",
     type: "email",
     placeholder: "test@g,ail.com",
@@ -172,114 +177,5 @@ export const inputElements = [
       
     }
   },
-  {
-    id: 1,
-    label: "First Name",
-    type: "text",
-    placeholder: "first name",
-    validationMethod: ()=>{
-
-    }
-
-  },
-  {
-    id: 2,
-    label: "Last Name",
-    type: "text",
-    placeholder: "last name",
-    validationMethod: ()=>{
-      
-    }
-  },
-  {
-    age: 3,
-    label: "Age",
-    type: "number",
-    placeholder: "age",
-    validationMethod: ()=>{
-      
-    }
-  },
-  {
-    id: 4,
-    label: "Email",
-    type: "email",
-    placeholder: "test@g,ail.com",
-    validationMethod: ()=>{
-      
-    }
-  },
-  {
-    id: 5,
-    label: "Marita status",
-    type: "email",
-    placeholder: "test@g,ail.com",
-    validationMethod: ()=>{
-      
-    }
-  },
-  {
-    id: 2,
-    label: "Last Name",
-    type: "text",
-    placeholder: "last name",
-    validationMethod: ()=>{
-      
-    }
-  },
-  {
-    age: 3,
-    label: "Age",
-    type: "number",
-    placeholder: "age",
-    validationMethod: ()=>{
-      
-    }
-  },
-  {
-    id: 4,
-    label: "Email",
-    type: "email",
-    placeholder: "test@g,ail.com",
-    validationMethod: ()=>{
-      
-    }
-  },
-  {
-    id: 5,
-    label: "Marita status",
-    type: "email",
-    placeholder: "test@g,ail.com",
-    validationMethod: ()=>{
-      
-    }
-  },
-  {
-    id: 1,
-    label: "First Name",
-    type: "text",
-    placeholder: "first name",
-    validationMethod: ()=>{
-
-    }
-
-  },
-  {
-    id: 2,
-    label: "Last Name",
-    type: "text",
-    placeholder: "last name",
-    validationMethod: ()=>{
-      
-    }
-  },
-  {
-    age: 3,
-    label: "Age",
-    type: "number",
-    placeholder: "age",
-    validationMethod: ()=>{
-      
-    }
-  },
+  
 ]

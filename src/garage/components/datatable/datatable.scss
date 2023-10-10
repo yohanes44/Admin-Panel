@@ -1,5 +1,24 @@
 
 
+.MuiTableCell-head{
+    color: #f4cc1c
+}
+
+.tableBody{
+    color:"#f4cd1c ! important"; 
+    // border: 2px solid red
+}
+
+// .MuiTableCell-body,
+
+.MuiTableSortLabel-root{
+    color: #000000 ! important;
+    font-weight: 600;
+}
+.title{
+    color: #000000;
+    font-weight: bolder;
+}
 .actionContainer{
     display: flex;
     align-items: center;
@@ -10,7 +29,7 @@
     .search{
         display: flex;
         align-items: space-around;
-        border: 0.5px solid lightgray;
+        border: 0.5px solid #f4cd1c;
         padding: 3px;
 
         input{
@@ -26,7 +45,7 @@
         button{
             background-color: transparent;
             border: none; 
-            color: #f4cd1c;
+            color: #000000;
             font-weight: bold;
         }
     }

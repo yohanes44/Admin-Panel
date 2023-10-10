@@ -153,7 +153,8 @@ export default function EnhancedTable({
         {numSelected > 0 ? (
           <Typography
             sx={{ flex: "1 1 100%" }}
-            color="#554507"
+            // color="#554507"
+            // fontWeight="bold"
             variant="subtitle1"
             component="div"
           >
@@ -161,7 +162,8 @@ export default function EnhancedTable({
           </Typography>
         ) : (
           <Typography
-            sx={{ flex: "1 1 100%", color: "#554507" }}
+            className="title"
+            sx={{ flex: "1 1 100%"}}
             variant="h6"
             id="tableTitle"
             component="div"
@@ -274,6 +276,7 @@ export default function EnhancedTable({
   );
 
   return (
+    
     <Box sx={{ width: "100%" }}>
       <Paper sx={{ width: "100%", mb: 2 }}>
         <div className="actionContainer">
@@ -290,12 +293,28 @@ export default function EnhancedTable({
               search
             </button>
           </div>
-         
+          {/* <button
+            onClick={() => {
+              // setSelected([])
+              const unSelectedRows = [];
+
+              rows.map((row) => {
+                if (!selected.includes(row.name)) {
+                  unSelectedRows.push(row);
+                }
+              });
+              setRows(unSelectedRows);
+             
+            }}
+            
+          >
+            Delete
+          </button> */}
         </div>
         <EnhancedTableToolbar numSelected={selected.length} />
 
         <TableContainer
-          style={{ backgroundColor: "#554507", borderRadius: "13px" }}
+          style={{ border: "1.3px solid #f4cd1c", borderRadius: "13px" }}
         >
           <Table
             sx={{ minWidth: 750 }}
@@ -309,6 +328,7 @@ export default function EnhancedTable({
               onSelectAllClick={handleSelectAllClick}
               onRequestSort={handleRequestSort}
               rowCount={rows.length}
+          
             />
             <TableBody>
               {visibleRows.map((row, index) => {
@@ -333,6 +353,10 @@ export default function EnhancedTable({
                         inputProps={{
                           "aria-labelledby": labelId,
                         }}
+                        // sx={{
+                        //   color: "white"
+                        // }}
+                        // custom 2
                       />
                     </TableCell>
                     <TableCell

@@ -19,7 +19,7 @@
     border-radius: 10px;
     // border: 2px solid red;
 
-    
+
     .top {}
 
     .center {
@@ -29,52 +29,72 @@
 
         form {
 
-            display: grid;
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-            .formInput {
-                margin: 15px;
+            .formInputContainer {
 
-                label {
+                display: grid;
+                gap: 20px;
+
+                .formInput {
+                    margin: 5px;
                     display: flex;
                     align-items: center;
-                    gap: 10px;
+                    justify-content: center;
+                    gap: 3px;
 
-                    .icon {
-                        cursor: pointer;
+                    label {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        width: 200px;
+
+                        display: flex;
+                        justify-content: end;
+                        margin: 5px;
+                        font-size: 15px;
+                        // border: 2px solid red;
+                    }
+
+                    input {
+                        width: 100%;
+                        padding: 5px;
+                        border: none;
+                        outline: none;
+                        border-radius: 5px;
+                        border: 3px solid #f4cc1c59;
+
+
+                        // &:focus {
+                        //     border: 3px solid #f4cc1c59;
+
+                        // }
                     }
                 }
 
-                input {
-                    width: 100%;
-                    padding: 5px;
-                    border: none;
-                    outline: none;
-                    border-bottom: 1px solid #f4cc1c59;
-                  
+            }
 
-                    &:focus{
-                        border-bottom: 1px solid #f4cd1c;
-                  
-                    }
-                }
+
+            button {
+
+                padding: 10px 20px;
+                border: none;
+                background-color: #f4cd1c;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: 10px;
+                color: #000000;
+                font-weight: 600;
+                border-radius: 5px;
+
+                border: none;
             }
 
 
         }
 
     }
-
-    button {
-        width: 150px;
-        padding: 10px;
-        border: none;
-        background-color: #f4cd1c;
-        font-weight: bold;
-        cursor: pointer;
-        margin-top: 10px;
-        color: black;
-        border-radius: 5px;
-    }
-
 }
